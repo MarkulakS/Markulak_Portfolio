@@ -1,3 +1,6 @@
+* {
+    box-sizing: inherit;
+}
 .navbar {
     display: flex;
     margin: 0;
@@ -5,4 +8,8 @@
 .main {
     margin: auto;
     margin-top: 80px;
+}
+.footer {
+    display: flex;
+    margin: 0;
 }
