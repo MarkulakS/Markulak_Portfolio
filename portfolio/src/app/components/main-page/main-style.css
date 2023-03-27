@@ -1,0 +1,44 @@
+.container {
+    --clr-1: #012E40;
+    --clr-3: #038C8C;
+    --clr-4: #03A696;
+    --clr-5: #F28705;
+    --gradient-angle: {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+}    
+
+.single-box {
+    position: relative;
+    margin: auto;
+    aspect-ratio: 1 / 1.5;
+    height: 260px;
+    width: 300px;
+    border-radius: 0.5rem;
+    background-color: var(--clr-1);
+}
+
+.single-box::before,
+.single-box::after {
+    content: '';
+    position: absolute;
+    inset: -.2rem;
+    z-index: -1;
+    background: conic-gradient(
+            var(--clr-3),
+            var(--clr-4),
+            var(--clr-5),
+            var(--clr-4),
+            var(--clr-3));
+    border-radius: inherit;
+}
+.single-box::after {
+    filter: blur(3.5rem);
+}
+
+@keyframes rotation {
+    0% { --gradient-angle: 0deg }
+    100% { --gradient-angle: 360deg }
+}

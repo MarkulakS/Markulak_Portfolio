@@ -1,51 +1,65 @@
 nav {
+    background-color: #012E40;
+}
+.navbar {
+    position: fixed;
     display: flex;
-    width: 100%;
+    flex-direction: row;
     justify-content: space-around;
+    width: 100vw;
     height: 80px;
+    background-color: inherit;
     line-height: 80px;
-    background-color: #131316;
+    z-index: 111;
 }
 .logo {
     display: flex;
     font-size: 40px;
     font-weight: 800;
-    color: #3d535f;
     letter-spacing: 3px;
     cursor: pointer;
     text-transform: uppercase;
     font-family: 'Poppins-Bold', sans-serif;
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #03A696;
+    }
+    .square {
+        margin-top: auto;
+        margin-bottom: 15px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%; 
+        background-color: #F28705;
+    }
 }
-.square {
-    margin-top: auto;
-    margin-bottom: 15px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%; 
-    background-color: #7f00ff;
-}
+
 .navItems {
     display: flex;
+    li {
+        list-style: none;
+        align-items: center;
+        margin: auto 15px;
+        line-height: 0;
+        a {
+            font-size: 20px;
+            color: #03A696;
+            letter-spacing: 3px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    }
+    li:hover a {
+        color: #F28705;
+    }
 }
-.navItems li {
-    list-style: none;
-    align-items: center;
-    margin: auto 15px;
-    line-height: 0;
-}
-.navItems li a {
-    font-size: 20px;
-    color: #3d535f;
-    letter-spacing: 3px;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-.navItems li:hover a ,
+
 .links a:hover {
-    color: #7f00ff;
+    color: #F28705;
 }
 .links a {
     font-size: 30px;
-    color: #3d535f;
+    color: #03A696;
     margin: 25px 10px;
 }
