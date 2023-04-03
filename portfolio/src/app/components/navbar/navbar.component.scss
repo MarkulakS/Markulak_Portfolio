@@ -12,6 +12,7 @@ nav {
     line-height: 80px;
     z-index: 111;
 }
+
 .logo {
     display: flex;
     font-size: 40px;
@@ -42,12 +43,14 @@ nav {
         align-items: center;
         margin: auto 15px;
         line-height: 0;
+        transition: all .5s ease;
         a {
             font-size: 20px;
             color: #03A696;
             letter-spacing: 3px;
             text-decoration: none;
             text-transform: capitalize;
+            transition: all .5s ease;
         }
     }
     li:hover a {
@@ -55,11 +58,25 @@ nav {
     }
 }
 
-.links a:hover {
-    color: #F28705;
-}
 .links a {
     font-size: 30px;
     color: #03A696;
     margin: 25px 10px;
+}
+.links a:hover {
+    color: #F28705;
+}
+
+@media (max-width: 700px) {
+    .navItems {
+        li {
+            margin: auto 10px;
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+    .links {
+        display: none;
+    }
 }
