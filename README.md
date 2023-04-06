@@ -21,6 +21,15 @@ Jeśli masz jakieś pytania lub propozycje współpracy, zachęcam do kontaktu.<
 <br>
 Dzięki użyciu arkuszy stylów CSS/SCSS wygląd, przejrzystość i użyteczność strony jest przyjemna i łatwa w obsłudze.</p>
 
+*Strona w ciągłej rozbudowie*
+
+## Narzędzia i technologie użyte w projekcie:
+- Visual Studio Code (środowisko)
+- Angular 12
+- TypeScript 4
+- HTML 5
+- SCSS
+
 <h2>Licencja</h2>
 <p>Ten projekt jest objęty licencją "przeglądową", co oznacza, że zachowuję pełne prawa autorskie do kodu, ale jednocześnie pozwalając na jego przeglądanie i korzystanie przez innych. Więcej informacji na temat licencji znajdziesz w pliku LICENSE.md.</p>
 
@@ -55,6 +64,15 @@ If you have any questions or proposals for collaboration, please feel free to co
 <br>
 Thanks to the use of CSS/SCSS style sheets, the website's appearance, clarity, and usability are enjoyable and user-friendly.</p>
 
+*Website under constant development*
+
+## Tools & technologies used in the project:
+- Visual Studio Code (enviroment)
+- Angular 12
+- TypeScript 4
+- HTML 5
+- SCSS
+
 <h2>License</h2>
 <p>This project is licensed under a "permissive" license, which means that I retain full copyright ownership of the code, while allowing others to view and use it. For more information about the license, please refer to the LICENSE.md file.</p>
 
@@ -65,5 +83,3 @@ Thanks to the use of CSS/SCSS style sheets, the website's appearance, clarity, a
 
 <h2>Contact</h2>
 <p>Email: <a href="mailto:markulaks17@gmail.com">markulaks17@gmail.com</a></p>
-</br></br>
-
