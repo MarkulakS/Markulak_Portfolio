@@ -29,13 +29,23 @@ export class NavbarComponent implements OnInit {
     });
   }
 
-  addBounce() {
-    var element = document.getElementById('icon-message');
+  addBounce(icon: string) {
+    var element: any;
+    if(icon === "fb") {
+      element = document.getElementById('icon-fb');
+
+    }else if( icon === "git") {
+      element = document.getElementById('icon-git');
+
+    } else if( icon === "msg") {
+      element = document.getElementById('icon-msg');
+    }
     element?.classList.add("fa-bounce");
 
     const firstTimeout = setTimeout(() => {
       element?.classList.remove("fa-bounce");
     }, 1000);
+
   }
   
 
