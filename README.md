@@ -67,7 +67,7 @@ Thanks to the use of CSS/SCSS style sheets, the website's appearance, clarity, a
 *Website under constant development*
 
 ## Tools & technologies used in the project:
-- Visual Studio Code (enviroment)
+- Visual Studio Code (environment)
 - Angular 12
 - TypeScript 4
 - HTML 5
