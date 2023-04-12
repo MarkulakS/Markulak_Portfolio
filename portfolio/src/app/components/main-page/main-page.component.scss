@@ -74,30 +74,29 @@ $--clr-6: #007369;
     }
 }
 .green-cube {
-    $--size: 200px;
     position: relative;
-    width: $--size;
-    height: $--size;
+    width: 200px;
+    height: 200px;
     .cube {
         span {
             background: linear-gradient(
                 /* #151515, #00ec00 */
                 #151515, $--clr-6
             );
-            transform: rotateY(calc(90deg * var(--i))) translateZ($--size/2);
+            transform: rotateY(calc(90deg * var(--i))) translateZ(200px);
         }
     }
     .top {
-        width: $--size;
-        height: $--size;
-        transform: rotateX(90deg) translateZ($--size/2);
+        width: 200px;
+        height: 200px;
+        transform: rotateX(90deg) translateZ(100px);
     }
     .bottom {
-        width: $--size;
-        height: $--size;
+        width: 200px;
+        height: 200px;
         // background: #0f0;
         background: $--clr-6;
-        transform: rotateX(-90deg) translateZ($--size - ($--size /4));
+        transform: rotateX(-90deg) translateZ(150px);
         // box-shadow: 
         // 0 0 120px rgba(0, 255, 0, 0.2), 
         // 0 0 200px rgba(0, 255, 0, 0.4),
