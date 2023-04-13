@@ -11,5 +11,25 @@
             <a href="https://github.com/MarkulakS?tab=repositories" (click)="addBounce('git')"><i id="icon-git" class="fa-brands fa-github"></i></a>
             <a href="#contact" (click)="addBounce('msg')"><i id="icon-msg" class="fa-solid fa-envelope"></i></a>
         </div>
+        <div class="mobile">
+            <div id="hamburger" class="hamburger" (click)="focusHamburger()">
+                <span class="line-0"></span>
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+            </div>
+            <div id="list-mobile" class="list-mobile">
+                <ul class="navItems-m">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">kontakt</a></li>
+                </ul>
+                <div class="links-m">
+                    <a href="https://www.facebook.com/szymek.markulak" (click)="addBounce('fb')"><i id="icon-fb" class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/MarkulakS?tab=repositories" (click)="addBounce('git')"><i id="icon-git" class="fa-brands fa-github"></i></a>
+                    <a href="#contact" (click)="addBounce('msg')"><i id="icon-msg" class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 </nav>

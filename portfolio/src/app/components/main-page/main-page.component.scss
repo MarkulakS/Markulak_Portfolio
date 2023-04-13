@@ -40,39 +40,39 @@ $--clr-6: #007369;
         filter: blur(20px);
     }
 }
-.red-cube {
-    position: fixed;
-    top: 20%;
-    left: 0;
-    // bottom: 0%;
-    width: 100px;
-    height: 100px;
-    margin-left: 75px;
-    .cube {
-        span {
-            background: linear-gradient(
-                    #151515, #f00
-                );
-            transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
-        }
-    }
-    .top {
-        width: 100px;
-        height: 100px;
-        transform: rotateX(90deg) translateZ(50px);
-    }
-    .bottom {
-        width: 100px;
-        height: 100px;
-        background: rgb(255, 0, 0);
-        transform: rotateX(-90deg) translateZ(80px);
-        box-shadow: 0 0 120px rgba(255, 0, 0, 0.2), 
-        0 0 200px rgba(255, 0, 0, 0.4),
-        0 0 300px rgba(255, 0, 0, 0.6),
-        0 0 400px rgba(255, 0, 0, 0.8),
-        0 0 500px rgba(255, 0, 0, 1);
-    }
-}
+// .red-cube {
+//     position: fixed;
+//     top: 20%;
+//     left: 0;
+//     // bottom: 0%;
+//     width: 100px;
+//     height: 100px;
+//     margin-left: 75px;
+//     .cube {
+//         span {
+//             background: linear-gradient(
+//                     #151515, #f00
+//                 );
+//             transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+//         }
+//     }
+//     .top {
+//         width: 100px;
+//         height: 100px;
+//         transform: rotateX(90deg) translateZ(50px);
+//     }
+//     .bottom {
+//         width: 100px;
+//         height: 100px;
+//         background: rgb(255, 0, 0);
+//         transform: rotateX(-90deg) translateZ(80px);
+//         box-shadow: 0 0 120px rgba(255, 0, 0, 0.2), 
+//         0 0 200px rgba(255, 0, 0, 0.4),
+//         0 0 300px rgba(255, 0, 0, 0.6),
+//         0 0 400px rgba(255, 0, 0, 0.8),
+//         0 0 500px rgba(255, 0, 0, 1);
+//     }
+// }
 .green-cube {
     position: relative;
     width: 200px;
@@ -83,7 +83,7 @@ $--clr-6: #007369;
                 /* #151515, #00ec00 */
                 #151515, $--clr-6
             );
-            transform: rotateY(calc(90deg * var(--i))) translateZ(200px);
+            transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
         }
     }
     .top {
@@ -94,15 +94,8 @@ $--clr-6: #007369;
     .bottom {
         width: 200px;
         height: 200px;
-        // background: #0f0;
         background: $--clr-6;
         transform: rotateX(-90deg) translateZ(150px);
-        // box-shadow: 
-        // 0 0 120px rgba(0, 255, 0, 0.2), 
-        // 0 0 200px rgba(0, 255, 0, 0.4),
-        // 0 0 300px rgba(0, 255, 0, 0.6),
-        // 0 0 400px rgba(0, 255, 0, 0.8),
-        // 0 0 500px rgba(0, 255, 0, 1);
         box-shadow: 
         0 0 120px rgba(0, 115, 105, 0.2), 
         0 0 200px rgba(0, 115, 105, 0.4),
@@ -167,11 +160,11 @@ $--clr-6: #007369;
         width: 49%;
         height: 80%;
         margin-left: 0;
-        padding-top: 2%;
+        margin-top: 2%;
     }
 
     .about {
-        padding-left: 5%;
+        margin-left: 5%;
         margin-top: -80px;
         z-index: 5;
         transition: all 0.5s ease;
@@ -185,14 +178,6 @@ $--clr-6: #007369;
             margin-top: 0;
             margin-left: 0;
         }
-        // .topline::after {
-        //     position: absolute;
-        //     content: '';
-        //     height: 4px;
-        //     width: 30px;
-        //     bottom: 10px;
-        //     background-color: #F28705;
-        // }
         h1 {
             display: block;
             font-size: 7em;
@@ -220,8 +205,10 @@ $--clr-6: #007369;
         
         .btns {
             display: flex;
+            flex-direction: row;
             width: 100%;
             margin: auto;
+            margin-top: 40px;
             gap: 1rem;
             transition: all 0.5s ease;
         }
@@ -236,7 +223,6 @@ $--clr-6: #007369;
             color: #fff;
             background-color: transparent;
             padding: 8px 14px;
-            margin: 40px 5px;
             letter-spacing: 2px;
             text-transform: uppercase;
             border: 3px solid rgba(255,255,255,1);
@@ -264,7 +250,6 @@ $--clr-6: #007369;
         position: absolute;
         bottom: -299px;
         left: 0;
-        // display: flex;
         width: 100%;
         height: 300px;
         margin: 0;
@@ -300,6 +285,7 @@ $--clr-6: #007369;
         display: flex;
         flex-direction: column;
         width: 90%;
+        max-width: 1000px;
         height: 50%;
         margin: auto;
         margin-bottom: 100px;
@@ -313,20 +299,20 @@ $--clr-6: #007369;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            width: 100%;
             margin: auto;
             margin-top: 0;
-            padding: 20px 30px;
             .skill-box {
                 position: relative;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 height: auto;
-                width: 20%;
-                min-width: 300px;
+                width: 80%;
+                max-width: 300px;
                 margin: 5px 5px;
-                margin-top: 5px;
-                padding: 10px 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 border: 1px solid rgba(255,255,255,0.2);
                 border-radius: 10px;
                 background-color: rgba(255,255,255,0.1);
@@ -339,6 +325,7 @@ $--clr-6: #007369;
                 .img-box {
                     display: flex;
                     flex-direction: row;
+                    margin: auto;
                     z-index: 2;
                     img {
                         width: 50px;
@@ -397,8 +384,7 @@ $--clr-6: #007369;
     }
     .text-box {
         display: flex;
-        width: 40%;
-        min-width: 607px;
+        width: 607px;
         height: auto;
         margin: auto;
         margin-bottom: 100px;
@@ -476,7 +462,7 @@ $--clr-6: #007369;
         width: 100%;
         height: 300px;
         margin: 0;
-        margin-bottom: -200px;
+        margin-bottom: -250px;
         z-index: 3;
         .wave {
             width: 150%;
@@ -508,11 +494,11 @@ $--clr-6: #007369;
         justify-content: center;
         flex-wrap: wrap;
         gap: 3rem;
-        width: calc(100% - 20px);
+        width: 90%;
         margin: auto;
         margin-top: 50px;
         height: auto;
-        padding-bottom: 55px;
+        margin-bottom: 55px;
         z-index: 0;
         .single-box {
             position: relative;
@@ -556,7 +542,9 @@ $--clr-6: #007369;
             border-radius: inherit;
         }
 
-        .single-box:hover::after {
+        .single-box:hover::after,
+        .single-box:focus::after,
+        .single-box:focus-visible::after {
             filter: blur(1.5rem);
         }
     }
@@ -594,11 +582,15 @@ $--clr-6: #007369;
 
 @media (max-width: 800px) {
     .wrapper {
+        padding: 50px 0;
+        .col {
+            width: 90%;
+            height: auto;
+        }
         .about {
-            padding-right: 5%;
+            margin: auto;
             text-align: center;
             .btns {
-                margin-top: 50px;
                 justify-content: center;
             }
         }
@@ -606,10 +598,67 @@ $--clr-6: #007369;
             display: none;
         }
     }
-    .icons .text-box {
-        min-width: 400px;
-        width: auto;
-        padding: 0 5%;
+    .icons {
+        .text-box {
+            width: auto;
+            margin: 0 5%;
+        }
+    }
+    .folio {
+        .text-box {
+            width: auto;
+            margin: 0 5%;
+        }
+        .glow-box {
+            .single-box::after {
+                filter: blur(1.5rem);
+            }
+        }
+    }
+}
+
+@media (max-width: 491px) {
+    .wrapper {
+        height: 100vh;
+        .about {
+            h1 {
+                font-size: 4rem;
+            }
+            .btns {
+                flex-direction: column;
+                margin-top: 30px;
+                button {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    .icons {
+        .header {
+            font-size: 2rem;
+        }
+        .skills .skills-container .skill-box {
+            width: 100%;
+        }
+        .text-box {
+            p {
+                font-size: 1.2rem;
+            }
+            span {
+                font-size: 1.4rem;
+            }
+            a {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .folio {
+        .header {
+            font-size: 2rem;
+        }
+        .text-box p {
+            font-size: 1.2rem;
+        }
     }
 }
 
