@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PolicyComponent } from './components/policy/policy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    PolicyComponent
   ],
   imports: [
     BrowserModule,

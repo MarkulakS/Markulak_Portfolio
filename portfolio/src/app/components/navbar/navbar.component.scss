@@ -158,16 +158,51 @@ nav {
 }
 
 
+.links {
+    display: flex;
+}
 .links a {
     font-size: 30px;
     color: #03A696;
     margin: 25px 10px;
+    line-height: 0;
 }
-.links a:hover {
+.links a:hover, .langWrap i:hover {
     color: #F28705;
 }
+.langWrap {
+    display: flex;
+    flex-direction: row;
+    width: 55px;
+    height: 30px;
+    i {
+        font-size: 30px;
+        color: #03A696;
+        margin: 25px 10px;
+        cursor: pointer;
+    }
+    .lang {
+        display: none;
+        margin-top: 70px;
+        font-size: 19px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    .lang.active {
+        text-decoration: underline;
+        color: #F28705;
+    }
+}
+.langWrap:hover {
+    height: 100px;
+    .lang {
+        display: flex;
+    }
+}
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
     .navItems {
         li {
             margin: auto 10px;

@@ -2,13 +2,17 @@
     <div class="navbar">
         <div class="logo"><a href="/">folio<div class="square"></div></a></div>
         <ul class="navItems">
-            <li style="margin-left: -15px;"><a href="#home">home</a></li>
-            <li><a href="#skills">skills</a></li>
+            <li style="margin-left: -15px;"><a href="#home" class="home">home</a></li>
+            <li><a href="#skills" class="skills">skills</a></li>
             <li><a href="#portfolio">portfolio</a></li>
         </ul>
         <div class="links">
             <a href="https://www.facebook.com/szymek.markulak" (click)="addBounce('fb')"><i id="icon-fb" class="fa-brands fa-facebook"></i></a>
             <a href="https://github.com/MarkulakS" (click)="addBounce('git')"><i id="icon-git" class="fa-brands fa-github"></i></a>
+            <!-- <div class="langWrap"><i class="fa-solid fa-earth-americas"></i>
+                <a href="#" class="lang" style="margin-left: -55px;" language="en">EN</a>
+                <a href="#" class="lang active" language="pl">PL</a>
+            </div> -->
             <a href="#contact" (click)="addBounce('msg')"><i id="icon-msg" class="fa-solid fa-envelope"></i></a>
         </div>
         <div class="mobile">
@@ -22,7 +26,7 @@
                     <li><a href="#home">home</a></li>
                     <li><a href="#skills">skills</a></li>
                     <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#contact">kontakt</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
                 <div class="links-m">
                     <a href="https://www.facebook.com/szymek.markulak" (click)="addBounce('fb')"><i id="icon-fb" class="fa-brands fa-facebook"></i></a>
